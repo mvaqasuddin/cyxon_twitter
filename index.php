@@ -19,6 +19,7 @@ add_shortcode('twitter', function($atts,$content){
 		'num_tweets' => 5,
 		'tweets_reset_time' => 30
 	),$atts);
+	
 	extract( $atts );
 	
 	if ( $show_tweets )
@@ -38,6 +39,7 @@ function fetch_tweets( $num_tweets, $username, $tweets_reset_time)
 		if($num_tweets-- === 0) break;
 		$data[] = $tweet->text;
 	}
+	
 	$recent_tweets = array( (int) date('i',time()) );
 	$ulli = "</li><li>";
 	$recent_tweets = '<ul class="twitter"><li>'.implode($ulli,$data).'</li></ul>';
