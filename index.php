@@ -1,7 +1,7 @@
 <?php
 /**
  * @package Twitter
- * @version 1.6
+ * @version 1
  */
 /*
 Plugin Name: Twitter
