@@ -6,7 +6,7 @@
 /*
 Plugin Name: Twitter
 Plugin URI: http://www.re.vu/mvaqasuddin
-Description: This is twitter wordpress plugin without HTTPS request on twitter on all time load the webpage
+Description: This is custom twitter wordpress plugin by our team.
 Author: Vaqas Uddin
 Version: 1
 Author URI: http://www.re.vu/mvaqasuddin
