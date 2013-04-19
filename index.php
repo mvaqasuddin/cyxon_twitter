@@ -44,7 +44,6 @@ function fetch_tweets( $num_tweets, $username, $tweets_reset_time)
 	$ulli = "</li><li>";
 	$recent_tweets[] = '<ul class="twitter"><li>'.implode($ulli,$data).'</li></ul>';
 	cache( $recent_tweets );
-	echo "hello world";
 	return $recent_tweets[1];
 }
 
