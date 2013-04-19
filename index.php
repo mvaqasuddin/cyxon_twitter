@@ -42,9 +42,10 @@ function fetch_tweets( $num_tweets, $username, $tweets_reset_time)
 	
 	$recent_tweets = array( (int) date('i',time()) );
 	$ulli = "</li><li>";
-	$recent_tweets = '<ul class="twitter"><li>'.implode($ulli,$data).'</li></ul>';
+	$recent_tweets[] = '<ul class="twitter"><li>'.implode($ulli,$data).'</li></ul>';
 	cache( $recent_tweets );
-	return $recent_tweets;
+	echo "hello world";
+	return $recent_tweets[1];
 }
 
 function curl($url)
