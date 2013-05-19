@@ -17,7 +17,9 @@ add_shortcode('twitter', function($atts,$content){
 		'content' => !empty( $content ) ? $content : "Follow Me On Twitter",
 		'show_tweets' => false,
 		'num_tweets' => 5,
-		'tweets_reset_time' => 30
+		'tweets_reset_time' => 30,
+		'name' => 'vaqas',
+		'helloworld' => 'helloworld'
 	),$atts);
 	
 	extract( $atts );
